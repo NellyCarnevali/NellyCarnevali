@@ -1,0 +1,731 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #042D2D;
+    background: #f5f4f0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #042D2D;
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color: #454545;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #042d2d;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 1366px;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #042d2d;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    transition: backgound 0.5s;
+    z-index: 9;
+}
+
+.back-to-top:hover {
+    background: #c86d1c;
+}
+
+.back-to-top:hover i {
+    color: #f5f5f5;
+}
+
+.back-to-top i {
+    color: #e2e2e2;
+    padding-top: 10px;
+}
+
+/*******************************/
+/********** Hero detalle CSS ***********/
+/*******************************/
+.hero {
+    position: relative;
+    width: 100%;
+    padding: 70px 0;
+    background: #f6f5f1;
+    overflow: hidden;
+}
+
+.hero .container-fluid {
+    padding: 0;
+}
+
+.hero .hero-image {
+    position: relative;
+    text-align: right;
+    
+}
+
+.hero .hero-image img {
+    max-width: 130%;
+    max-height: 120%;
+}
+
+.hero .hero-text {
+    position: relative;
+    padding-left: 75px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero .hero-text h1 {
+    color: #042D2D;
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero .hero-text p {
+    color: #042D2D;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero .hero-btn .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #f6f5f1;
+    background: #bb6b1e;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.hero .hero-btn .btn:hover {
+    color: #f6f5f1;
+    background: #042D2D;
+}
+
+.hero .hero-btn .btn:first-child {
+    margin-right: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .hero .hero-text {
+        padding: 0 15px;
+        margin-left: 15px;
+    }
+    
+    .hero .hero-text h1 {
+        font-size: 30px;
+    }
+    
+    .hero .hero-text p {
+        font-size: 16px;
+    }
+    
+    .hero .hero-text .btn {
+        padding: 12px 30px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero .hero-text h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    
+    .hero .hero-text p {
+        font-size: 14px;
+    }
+    
+    .hero .hero-text .btn {
+        padding: 20px 15px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+	
+	.hero .hero-image {
+		text-align: left;
+		margin-top: -50px;
+	}
+	
+	.hero .hero-image img {
+		max-width: 120%;
+		max-height: 100%;
+	}
+}
+
+@media (max-width: 575.98px) {
+    .hero .hero-text h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .hero .hero-text p {
+        font-size: 14px;
+    }
+    
+    .hero .hero-text .btn {
+        padding: 8px 10px;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+}
+/*******************************/
+/********* hero *********/
+/*******************************/
+
+.hero {
+
+    margin-top: 80px;
+}
+
+/*******************************/
+/********* Métodosdepago *********/
+/*******************************/
+
+.metodosdepago {
+
+    background-color: #e1ac38;
+padding: 20px;
+
+}
+
+.metodosdepago h2 {
+
+    color: #f5f4f0;
+}
+
+
+
+
+/*******************************/
+/********* Service 2 CSS *********/
+/*******************************/
+.service2 {
+    position: relative;
+    width: 100%;
+    padding: 30px 0 15px 0;
+    background-color: #E2F2EB;
+}
+
+
+.service2 .service-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid #E2F2EB;
+    transition: .3s;
+}
+
+.service2 .service-item:hover,
+.service2 .service-item.active {
+    background: #E2F2EB;
+    color: #06352c;
+}
+
+.service2 .service-icon {
+    position: relative;
+    margin: 0 auto 25px auto;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.service2 .service-icon i {
+    position: relative;
+    font-size: 80px;
+    color: #483d31;
+    z-index: 3;
+    
+}
+
+.service2 .service-icon:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #cfe5dd;
+    border-radius: 50%;
+    animation: pulse-border 2000ms ease-out infinite;
+}
+
+.service2 .service-icon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #cfe5dd;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+    opacity: 0;
+  }
+}
+
+.service2 .service-item h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.service2 .service-item:hover h3,
+.service2 .service-item.active h3 {
+    color: #06352c;
+}
+
+.service2 .service-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/*******************************/
+/********* LO QUE INCLUYE TU CAJA *********/
+/*******************************/
+.service2detalle {
+    position: relative;
+    width: 100%;
+    padding: 80px 0 15px 0;
+    background-color: #E2F2EB;
+}
+
+
+.service2detalle .service-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid #E2F2EB;
+    transition: .3s;
+}
+
+.service2detalle .service-item:hover,
+.service2 .service-item.active {
+    background: #E2F2EB;
+    color: #06352c;
+}
+
+.service2detalle .service-icon {
+    position: relative;
+    margin: 0 auto 25px auto;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.service2detalle .service-icon i {
+    position: relative;
+    font-size: 80px;
+    color: #483d31;
+    z-index: 3;
+    
+}
+
+.service2detalle .service-icon:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #cfe5dd;
+    border-radius: 50%;
+    animation: pulse-border 2000ms ease-out infinite;
+}
+
+.service2detalle .service-icon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #cfe5dd;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+    opacity: 0;
+  }
+}
+
+.service2detalle .service-item h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.service2detalle .service-item:hover h3,
+.service2detalle .service-item.active h3 {
+    color: #06352c;
+}
+
+.service2detalle .service-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/*******************************/
+/********* Facilidades *********/
+/*******************************/
+
+/*******************************/
+/********* Service 2 CSS *********/
+/*******************************/
+.facilidades {
+    position: relative;
+    width: 100%;
+    padding: 30px 0 15px 0;
+    background-color: #f5f4f0;
+}
+
+
+.facilidades {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid #f5f4f0;
+    transition: .3s;
+}
+
+.facilidades .service-item:hover,
+.facilidades .service-item.active {
+    background: #f5f4f0;
+    color: #06352c;
+}
+
+.facilidades .service-icon {
+    position: relative;
+    margin: 0 auto 25px auto;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.facilidades .service-icon i {
+    position: relative;
+    font-size: 80px;
+    color: #483d31;
+    z-index: 3;
+    
+}
+
+.facilidades .service-icon:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #cfe5dd;
+    border-radius: 50%;
+    animation: pulse-border 2000ms ease-out infinite;
+}
+
+.facilidades .service-icon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #cfe5dd;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+    opacity: 0;
+  }
+}
+
+.facilidades .service-item h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.facilidades .service-item:hover h3,
+.facilidades .service-item.active h3 {
+    color: #06352c;
+}
+
+.facilidades .service-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/*******************************/
+/******* Preguntas frecuentes*******/
+/*******************************/
+
+
+
+.class {
+
+    background-color: #F6F5F1;
+    padding: 80px;
+}
+
+.class .container {
+
+    padding: 0px;
+    
+}
+
+details {
+
+    background-color: #e2f2eb;
+    padding: 20px;
+    margin: 20px;
+    margin-right: 10px;
+    border-radius:  6px;
+    width: 700px;
+
+}
+
+
+/*******************************/
+/********* Pricing CSS *********/
+/*******************************/
+
+
+.price {
+    position: relative;
+    width: 100%;
+    padding: 80px 0 90px 0;
+    background-color: #042d2d;
+    display: flex;
+    justify-content: center;
+
+
+    
+}
+
+.price .container {
+    
+    margin-right: auto;
+}
+ .price h2{
+    color:#f5f4f0;
+ } 
+
+
+.price .price-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.price .price-header,
+.price .price-body,
+.price .price-footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: #f5f4f0;
+    overflow: hidden;
+}
+
+.price .price-header {
+    padding: 30px;
+    background: #e1ac38;
+    color: #483c31;
+}
+
+.price .price-item.featured-item .price-header {
+    background: #c86d1c;
+    color: #F7CAC9;
+}
+
+.price .price-status {
+    margin-top: -30px;
+    text-align: right;
+}
+
+.price .price-status span {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    right: -30px;
+    padding: 7px 10px;
+    text-align: center;
+    color: #343148;
+    font-size: 14px;
+    line-height: 14px;
+    background: #F6F5F1;
+}
+
+.price .price-title h2 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #F6F5F1;
+}
+
+.price .price-prices h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #F6F5F1;
+}
+
+.price .price-prices h2 small {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 9px;
+    margin-left: -12px;
+}
+
+.price .price-prices h2 span {
+    margin-left: 1px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.price .price-item.featured-item h2 {
+    color: #F6F5F1;
+}
+
+.price .price-body {
+    padding: 25px 0 20px 0;
+    border: 1px solid #00000012;
+    border-bottom: none;
+}
+
+.price .price-description ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.price .price-description ul li {
+    padding: 7px;
+    border-bottom: 1px solid rgba(0, 0, 0, .07);
+}
+
+.price .price-description ul li:last-child {
+    border: none;
+}
+
+.price .price-action {
+    border: 1px solid #00000012;
+    border-top: none;
+}
+
+.price .price-action a.btn {
+    margin-bottom: 30px;
+    padding: 12px 20px;
+    color: #F6F5F1;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 0;
+    background: #e1ac38;
+    transition: .3s;
+}
+
+.price .price-action a:hover,
+.price .price-item.featured-item .price-action a {
+    color: #F6F5F1;
+    background: #C96D1C;
+}
+
+.price .price-item.featured-item .price-action a:hover {
+    color: #F6F5F1;
+    background: #042d2d;
+}
